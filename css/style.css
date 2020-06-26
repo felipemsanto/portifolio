@@ -2,6 +2,7 @@
 
 :root{
     --color-green: #50fa7b;
+    --color-human_videos: rgb(236, 135, 122); 
 }
 
 * {
@@ -88,10 +89,13 @@ wrapper p a {
 .cards {
     max-width: 800px;
     margin: 0 auto ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .card {
-   background-color: rgb(146, 20, 37); 
+   background-color: var(--color-human_videos); 
 }
 
 .card__image-container img {
@@ -106,4 +110,13 @@ wrapper p a {
 .card__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.card__price {
+    background-color:var(--color-human_videos);
+    filter: brightness(85%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+
 }
