@@ -129,6 +129,8 @@ wrapper p a {
     height: 100%;
     position: fixed;
     top: 0;
+    opacity: 0%;
+    visibility: hidden;
 }
 
 .modal {
@@ -144,4 +146,11 @@ position: relative;
   right: 8px;
   top: 8px;
   cursor: pointer;  
+}
+
+/* ==== MODAL.ACTIVE===*/
+
+.modal-overlay.active {
+   opacity: 1; 
+   visibility: visible;
 }
