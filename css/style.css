@@ -5,6 +5,9 @@
     --color-human_videos: rgb(236, 135, 122); 
 }
 
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -41,9 +44,14 @@ header {
     color: var(--color-human_videos);
 }
 
+#wrapper-class {
+    text-align: center;
+    padding: 40px;
+}
+
 #wrapper {
     text-align: center;
-    padding: 32px;
+    padding-top: 60px;
 }
 
 #wrapper img {
@@ -54,10 +62,12 @@ header {
 
 }
 
+
 #wrapper h1 {
     font-size: 42px;
     line-height: 52px;
     font-weight: bold;
+    padding-top: 40px ;
 }
 
 #wrapper h2 {
@@ -79,10 +89,39 @@ wrapper p a {
     color: var(--color-green);
 }
 
-#links-footer a{
-    border-bottom: 1px solid var(--color-human_videos);
+#links-footer {
+position:absolute;
+bottom:25px;
+width:100%;
 }
 
+#links-footer img {
+    /*opacidade*/
+    opacity: 0.75;
+    -moz-opacity: 0.75;
+    filter: alpha(opacity=75);
+    -webkit-filter: opacity(0.75);
+    /*filtro P/B*/
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+    /* Chrome 19+ & Safari 6+ */
+    /*qualidade*/
+    image-rendering: auto;
+    width: 50px;
+    }
+
+#links-footer img:hover {
+    opacity: 1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-filter: opacity(1);
+    filter: none;
+    /* Firefox 10+ */
+    -webkit-filter: grayscale(0%);
+    /* Chrome 19+ & Safari 6+ */
+    image-rendering: auto;
+  }
 
 /*=== CARDS ===*/
 
@@ -92,6 +131,7 @@ wrapper p a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:25px;
+    cursor: pointer; 
 }
 
 .card {
@@ -134,18 +174,18 @@ wrapper p a {
 }
 
 .modal {
-background-color: white;
-width: 90%;
-height: 90%;
-margin: 5vh auto;
-position: relative;
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
 }
 
 .modal .close-modal {
-  position: absolute;  
-  right: 8px;
-  top: 8px;
-  cursor: pointer;  
+    position: absolute;  
+    right: 8px;
+    top: 8px;
+    cursor: pointer;  
 }
 
 /* ==== MODAL.ACTIVE===*/
